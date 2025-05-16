@@ -14,7 +14,7 @@ release: build
 
 shell:
   docker run -it --rm \
-      -v ~/.aws:/home/hadoop/.aws \
+      -v ~/.aws:/root/.aws \
       -e AWS_PROFILE=$AWS_PROFILE \
       --name civis-glue-pyspark \
       blaing/civis-glue:1.0.0 \
